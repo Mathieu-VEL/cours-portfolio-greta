@@ -1,20 +1,120 @@
  /* dm-sans-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/dm-sans-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-    /* root est la racine */
-:root{
-    /* -- c'est des variable */
-    --font1: #323861;
-    --font2: #14b789;
-    --font3: #e8dede;
-}
+ @font-face {
+     font-display: swap;
+     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'DM Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: url('./fonts/dm-sans-v15-latin-regular.woff2') format('woff2');
+     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+ }
 
-body{
-    /* couleur de fond de site */
-    background-color: rgb(61, 61, 233);
-}
+ /* root est la racine */
+ :root {
+     /* -- c'est des variable */
+     --font1: #323861;
+     --font2: #14b789;
+     --font3: #e8dede;
+     --font4: black;
+     --fontprincipale: 'DM Sans';
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ /* ---------------header-------------- */
+ .container {
+     max-width: 1200px;
+     width: 100%;
+     margin: 0 auto;
+ }
+
+ #bandeau {
+     background-color: var(--font1);
+     color: white;
+     display: flex;
+     /* centrer les element en vertical */
+     align-items: center;
+     padding: 16px 0;
+ }
+
+ #bandeau h2 {
+     width: 25%;
+     margin-left: 10px;
+ }
+
+ a {
+     color: white;
+     text-decoration: none;
+ }
+
+ #bandeau #menuprincipal ul li a:hover,
+ /*  */
+ #bandeau #menuprincipal ul li a.choix {
+     color: var(--font2);
+     border-bottom: 1px solid var(--font2);
+     transition: 0.4s;
+
+ }
+
+ #bandeau #menuprincipal {
+     width: 50%;
+ }
+
+ #bandeau #menuprincipal ul {
+     display: flex;
+ }
+
+ #bandeau #menuprincipal ul li a {
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+     margin-right: 16px;
+ }
+
+ ul {
+     list-style-type: none;
+ }
+
+
+ #bandeau #telephone {
+     width: 25%;
+     display: flex;
+     justify-content: center;
+     background-color: #14b789;
+ }
+
+ #bandeau #telephone i {
+     background-color: white;
+     color: var(--font4);
+     padding: 8px;
+     border-radius: 50%;
+     margin-right: 16px;
+     width: 30px;
+     height: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #bandeau #telephone .tel {
+     /* padding x(px)=Hauteur x(px)=Largeur */
+     padding: 8px 16px;
+     /* border-solid créer une bordure / x(px)=l'epesseur de la bordure */
+     border: 1px solid white;
+     /* border-radius arrondis les bordure */
+     border-radius: 50px;
+ }
+
+
+
+ body {
+     /* couleur de fond de site */
+     background-color: var(--font3);
+     /* importation de font */
+     font-family: var(--fontprincipale);
+     /* taille de font */
+     font-size: 18px;
+ }

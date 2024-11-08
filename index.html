@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header id="bandeau">
+    <header id="bandeau" class="container">
         <!-- titre de l'accueil -->
-        <h2>Mon Portfolio</h2>
-        <nav id="menuPrincipal"></nav>
-        <!-- list de header -->
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="index.html">A Propos</a></li>
-            <li><a href="index.html">Mes Projets</a></li>
-            <li><a href="index.html">Contact</a></li>
-        </ul>
+        <h2><a href="index.html">Mon Portfolio</a></h2>
+        <nav id="menuprincipal">
+            <!-- list de header -->
+            <ul>
+                <li><a href="index.html" class="choix">Accueil</a></li>
+                <li><a href="#">A Propos</a></li>
+                <li><a href="#">Mes Projets</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="telephone">
+            <i class="fa-solid fa-phone"></i>
+            <p class="tel">120 140 2600</p>
+        </div>
     </header>
 </body>
+
 </html>
