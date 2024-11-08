@@ -29,6 +29,23 @@
      max-width: 1200px;
      width: 100%;
      margin: 0 auto;
+     box-sizing: border-box;
+ }
+
+ .bouton {
+     border: 1px solid white;
+     border-radius: 50px;
+     padding: 10px 20px;
+ }
+
+ .bouton:hover {
+     background-color: white;
+     color: black;
+     transition: 0.3s;
+ }
+
+ ul {
+     list-style-type: none;
  }
 
  #bandeau {
@@ -46,8 +63,8 @@
      font-size: 1.8em;
  }
 
- #bandeau h1 a{
-    color: white;
+ #bandeau h1 a {
+     color: white;
  }
 
  a {
@@ -56,7 +73,6 @@
  }
 
  #bandeau #menuprincipal ul li a:hover,
- /*  */
  #bandeau #menuprincipal ul li a.choix {
      color: var(--font2);
      border-bottom: 1px solid var(--font2);
@@ -79,16 +95,10 @@
      margin-right: 16px;
  }
 
- ul {
-     list-style-type: none;
- }
-
-
  #bandeau #telephone {
      width: 25%;
      display: flex;
      justify-content: center;
-     background-color: #14b789;
  }
 
  #bandeau #telephone i {
@@ -113,14 +123,79 @@
      border-radius: 50px;
  }
 
-/* block bienvenue */
-#bienvenue{
+ /*------------------------ block bienvenue --------------------*/
+ #bienvenue {
+     display: flex;
+     justify-content: space-between;
+     background-color: var(--font1);
+     padding: 40px;
+ }
+
+ #bienvenue .bienvenuetext {
+     width: 68%;
+ }
+
+ #bienvenue .avatar {
+     width: 30%;
+ }
+
+ #bienvenue .avatar img {
+     width: 100%;
+ }
+
+ #bienvenue .bienvenuetext .hello {
+     display: flex;
+ }
+
+ #bienvenue .bienvenuetext .hello img {
+     width: 12%;
+     margin-right: 16px;
+ }
+
+ #bienvenue .bienvenuetext .hello h2 {
+     background-color: white;
+     border-radius: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0 60px;
+     margin: 10px 0;
+     font-size: 2.2rem;
+ }
+
+ #bienvenue .bienvenuetext h3 {
+     background-color: white;
+     color: var(--font2);
+     border-radius: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 67.5%;
+     margin: 50px 0px;
+     padding: 10px 10px;
+ }
+
+ /* --------------------Mon histoire--------------------- */
+
+
+#histoire{
+    background-color: var(--font3);
     display: flex;
+    /* space-evenly met un espace autoure de lobjet */
+    justify-content: space-evenly;
+
+
 }
 
+#histoire .imghistoire,
+#contenuehistoire{
+    width: 48%;
+}
 
-
-
+#histoire .imghistoire{
+    height: 100%;
+    border-radius: 25px;
+}
 
 
  body {
