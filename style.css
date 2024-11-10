@@ -1,208 +1,204 @@
- /* dm-sans-regular - latin */
- @font-face {
-     font-display: swap;
-     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-     font-family: 'DM Sans';
-     font-style: normal;
-     font-weight: 400;
-     src: url('./fonts/dm-sans-v15-latin-regular.woff2') format('woff2');
-     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
- }
+/* dm-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/dm-sans-v15-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
- /* root est la racine */
- :root {
-     /* -- c'est des variable */
-     --font1: #323861;
-     --font2: #14b789;
-     --font3: #e8dede;
-     --font4: black;
-     --fontprincipale: 'DM Sans';
- }
+/* root est la racine */
+:root {
+  /* -- c'est des variable */
+  --font1: #323861;
+  --font2: #14b789;
+  --font3: #e8dede;
+  --font4: black;
+  --fontprincipale: "DM Sans";
+}
 
- * {
-     margin: 0;
-     padding: 0;
- }
+* {
+  margin: 0;
+  padding: 0;
+}
 
- /* ---------------header-------------- */
- .container {
-     max-width: 1200px;
-     width: 100%;
-     margin: 0 auto;
-     box-sizing: border-box;
- }
+/* ---------------header-------------- */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 
- .bouton {
-     border: 1px solid white;
-     border-radius: 50px;
-     padding: 10px 20px;
- }
+.bouton {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
 
- .bouton:hover {
-     background-color: white;
-     color: black;
-     transition: 0.3s;
- }
+.bouton:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
 
- ul {
-     list-style-type: none;
- }
+ul {
+  list-style-type: none;
+}
 
- #bandeau {
-     background-color: var(--font1);
-     color: white;
-     display: flex;
-     /* centrer les element en vertical */
-     align-items: center;
-     padding: 16px 0;
- }
+#bandeau {
+  background-color: var(--font1);
+  color: white;
+  display: flex;
+  /* centrer les element en vertical */
+  align-items: center;
+  padding: 16px 0;
+}
 
- #bandeau h1 {
-     width: 25%;
-     margin-left: 10px;
-     font-size: 1.8em;
- }
+#bandeau h1 {
+  width: 25%;
+  margin-left: 10px;
+  font-size: 1.8em;
+}
 
- #bandeau h1 a {
-     color: white;
- }
+#bandeau h1 a {
+  color: white;
+}
 
- a {
-     color: white;
-     text-decoration: none;
- }
+a {
+  color: white;
+  text-decoration: none;
+}
 
- #bandeau #menuprincipal ul li a:hover,
- #bandeau #menuprincipal ul li a.choix {
-     color: var(--font2);
-     border-bottom: 1px solid var(--font2);
-     transition: 0.4s;
+#bandeau #menuprincipal ul li a:hover,
+#bandeau #menuprincipal ul li a.choix {
+  color: var(--font2);
+  border-bottom: 1px solid var(--font2);
+  transition: 0.4s;
+}
 
- }
+#bandeau #menuprincipal {
+  width: 50%;
+}
 
- #bandeau #menuprincipal {
-     width: 50%;
- }
+#bandeau #menuprincipal ul {
+  display: flex;
+}
 
- #bandeau #menuprincipal ul {
-     display: flex;
- }
+#bandeau #menuprincipal ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
 
- #bandeau #menuprincipal ul li a {
-     color: white;
-     text-decoration: none;
-     text-transform: uppercase;
-     margin-right: 16px;
- }
+#bandeau #telephone {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
 
- #bandeau #telephone {
-     width: 25%;
-     display: flex;
-     justify-content: center;
- }
+#bandeau #telephone i {
+  background-color: white;
+  color: var(--font4);
+  padding: 8px;
+  border-radius: 50%;
+  margin-right: 16px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- #bandeau #telephone i {
-     background-color: white;
-     color: var(--font4);
-     padding: 8px;
-     border-radius: 50%;
-     margin-right: 16px;
-     width: 30px;
-     height: 30px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
+#bandeau #telephone .tel {
+  /* padding x(px)=Hauteur x(px)=Largeur */
+  padding: 8px 16px;
+  /* border-solid créer une bordure / x(px)=l'epesseur de la bordure */
+  border: 1px solid white;
+  /* border-radius arrondis les bordure */
+  border-radius: 50px;
+}
 
- #bandeau #telephone .tel {
-     /* padding x(px)=Hauteur x(px)=Largeur */
-     padding: 8px 16px;
-     /* border-solid créer une bordure / x(px)=l'epesseur de la bordure */
-     border: 1px solid white;
-     /* border-radius arrondis les bordure */
-     border-radius: 50px;
- }
+/*------------------------ block bienvenue --------------------*/
 
- /*------------------------ block bienvenue --------------------*/
- #bienvenue {
-     display: flex;
-     justify-content: space-between;
-     background-color: var(--font1);
-     padding: 40px;
- }
+#bienvenue {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--font1);
+  padding: 40px;
+}
 
- #bienvenue .bienvenuetext {
-     width: 68%;
- }
+#bienvenue .bienvenuetext {
+  width: 68%;
+}
 
- #bienvenue .avatar {
-     width: 30%;
- }
+#bienvenue .avatar {
+  width: 30%;
+}
 
- #bienvenue .avatar img {
-     width: 100%;
- }
+#bienvenue .avatar img {
+  width: 100%;
+}
 
- #bienvenue .bienvenuetext .hello {
-     display: flex;
- }
+#bienvenue .bienvenuetext .hello {
+  display: flex;
+}
 
- #bienvenue .bienvenuetext .hello img {
-     width: 12%;
-     margin-right: 16px;
- }
+#bienvenue .bienvenuetext .hello img {
+  width: 12%;
+  margin-right: 16px;
+}
 
- #bienvenue .bienvenuetext .hello h2 {
-     background-color: white;
-     border-radius: 50px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 0 60px;
-     margin: 10px 0;
-     font-size: 2.2rem;
- }
+#bienvenue .bienvenuetext .hello h2 {
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+  margin: 10px 0;
+  font-size: 2.2rem;
+}
 
- #bienvenue .bienvenuetext h3 {
-     background-color: white;
-     color: var(--font2);
-     border-radius: 50px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 67.5%;
-     margin: 50px 0px;
-     padding: 10px 10px;
- }
+#bienvenue .bienvenuetext h3 {
+  background-color: white;
+  color: var(--font2);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67.5%;
+  margin: 50px 0px;
+  padding: 10px 10px;
+}
 
- /* --------------------Mon histoire--------------------- */
+/* --------------------Mon histoire--------------------- */
 
-
-#histoire{
-    background-color: var(--font3);
-    display: flex;
-    /* space-evenly met un espace autoure de lobjet */
-    justify-content: space-evenly;
-
-
+#histoire {
+  background-color: var(--font3);
+  display: flex;
+  /* space-evenly met un espace autoure de lobjet */
+  justify-content: space-evenly;
 }
 
 #histoire .imghistoire,
-#contenuehistoire{
-    width: 48%;
+#contenuehistoire {
+  width: 48%;
 }
 
-#histoire .imghistoire{
-    height: 100%;
-    border-radius: 25px;
+#histoire .imghistoire {
+  height: 100%;
+  border-radius: 25px;
 }
 
-
- body {
-     /* couleur de fond de site */
-     background-color: var(--font3);
-     /* importation de font */
-     font-family: var(--fontprincipale);
-     /* taille de font */
-     font-size: 18px;
- }
+body {
+  /* couleur de fond de site */
+  background-color: var(--font3);
+  /* importation de font */
+  font-family: var(--fontprincipale);
+  /* taille de font */
+  font-size: 18px;
+}

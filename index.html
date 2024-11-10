@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header id="bandeau" class="container">
-        <!-- titre de l'accueil -->
-        <h1><a href="index.html">Mon Portfolio</a></h1>
-        <nav id="menuprincipal">
-            <!-- list de header -->
-            <ul>
-                <li><a href="index.html" class="choix">Accueil</a></li>
-                <li><a href="#">A Propos</a></li>
-                <li><a href="#">Mes Projets</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="telephone">
-            <i class="fa-solid fa-phone"></i>
-            <p class="tel">120 140 2600</p>
-        </div>
+      <!-- titre de l'accueil -->
+      <h1><a href="index.html">Mon Portfolio</a></h1>
+      <nav id="menuprincipal">
+        <!-- list de header -->
+        <ul>
+          <li><a href="index.html" class="choix">Accueil</a></li>
+          <li><a href="#">A Propos</a></li>
+          <li><a href="#">Mes Projets</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="telephone">
+        <i class="fa-solid fa-phone"></i>
+        <p class="tel">120 140 2600</p>
+      </div>
     </header>
+
+    <!--------------------- block bienvenue ---------------------->
+
     <main class="container">
-        <div id="bienvenue">
-            <div class="bienvenuetext">
-                <div class="hello">
-                    <img src="./imgportfolio/pngegg-5.png" alt="avatar">
-                    <h2>Bienvenue Evryone</h2>
-                </div>
-                <h3>Je suis disponible en Freelance</h3>
-                <a href="#contact" class="bouton">on commence quand ?</a>
-            </div>
+      <div id="bienvenue">
+        <div class="bienvenuetext">
+          <div class="hello">
+            <img src="./imgportfolio/pngegg-5.png" alt="avatar" />
+            <h2>Bienvenue Evryone</h2>
+          </div>
+          <h3>Je suis disponible en Freelance</h3>
+          <a href="#contact" class="bouton">on commence quand ?</a>
+        </div>
 
-            <figure class="avatar">
-                <img src="./imgportfolio/pngegg-5.png" alt="avatar">
-            </figure>
+        <figure class="avatar">
+          <img src="./imgportfolio/pngegg-5.png" alt="avatar" />
+        </figure>
+      </div>
+
+      <!------------------------- block mon histoire ------------------------->
+
+      <div id="histoire">
+        <img
+          src="./imgportfolio/headway.jpg"
+          alt="mon histoire"
+          class="imghistoire"
+        />
+        <div id="contenuehistoire">
+          <h2 class="titre">
+            Mon histoire
+            <img src="./imgportfolio/pngegg-3.png" alt="moi" />
+          </h2>
+          <h3>quelques mots à propos de moi</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab rem et
+            enim adipisci eius labore impedit repudiandae. Quisquam, doloribus.
+            Illum quidem ullam nam, facilis necessitatibus totam animi ratione.
+            Vero, libero!
+          </p>
         </div>
-        <div id="histoire">
-            <img src="./imgportfolio/headway.jpg" alt="mon histoire" class="imghistoire">
-            <div id="contenuehistoire">
-                <h2 class="titre">
-                    Mon histoire
-                    <img src="./imgportfolio/pngegg-3.png" alt="moi">
-                </h2>
-                <h3>quelques mots à propos de moi</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ab rem et enim adipisci eius labore impedit repudiandae.
-                    Quisquam, doloribus.
-                    Illum quidem ullam nam, facilis necessitatibus totam animi ratione.
-                    Vero, libero!
-                </p>
-            </div>
-        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
