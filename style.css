@@ -83,6 +83,11 @@ a {
   width: 50%;
 }
 
+#bandeau #menuprincipal #burger i{
+  font-size: 2rem;
+  display: none;
+}
+
 #bandeau #menuprincipal ul {
   display: flex;
 }
@@ -120,6 +125,10 @@ a {
   border: 1px solid white;
   /* border-radius arrondis les bordure */
   border-radius: 50px;
+}
+
+contenue {
+  background-color: var(--font3);
 }
 
 /*------------------------ block bienvenue --------------------*/
@@ -181,17 +190,193 @@ a {
   background-color: var(--font3);
   display: flex;
   /* space-evenly met un espace autoure de lobjet */
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding: 40px 24px;
+  flex-wrap: wrap;
 }
 
 #histoire .imghistoire,
-#contenuehistoire {
-  width: 48%;
+#histoire #contenuehistoire {
+  width: 46%;
 }
 
 #histoire .imghistoire {
   height: 100%;
   border-radius: 25px;
+}
+
+.titre {
+  display: flex;
+  border-radius: 25px;
+  background-color: var(--font2);
+  align-items: center;
+  color: white;
+  justify-content: center;
+  font-size: 2.8rem;
+  padding: 0px 10%;
+  /* justify-content: space-between; */
+}
+
+#histoire #contenuehistoire h2 img {
+  width: 28%;
+}
+
+#histoire #contenuehistoire h3 {
+  margin: 24px 0;
+  font-weight: bold;
+}
+/*------------------- block projets ----------------*/
+
+#projets {
+  display: flex;
+  padding: 40px 48px;
+  flex-wrap: wrap;
+}
+
+#projets .titre {
+  flex-direction: row-reverse;
+  width: 28%;
+  margin-bottom: 40px;
+}
+
+#projets h2 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 16px;
+}
+
+#projets #listeprojets .projets img {
+  width: 90%;
+  border-radius: 25px;
+  transform: rotate(10deg);
+  transition: ease 0.5s;
+}
+
+#projets #listeprojets .projets:hover {
+  border: 1px solid var(--font2);
+}
+
+#projets #listeprojets .projets:hover img {
+  transform: rotate(15deg);
+}
+
+#projets #listeprojets {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+#projets #listeprojets .projets {
+  box-sizing: border-box;
+  width: 48%;
+  background-color: white;
+  border-radius: 25px;
+  padding: 40px;
+  height: 490px;
+  overflow: hidden;
+  border: 1px solid white;
+  transition: ease 0.5s;
+  flex-wrap: wrap;
+}
+
+#projets #listeprojets .projets h4 {
+  font-size: 0.8rem;
+}
+
+#projets #listeprojets .projets h3 {
+  margin-bottom: 48px;
+}
+
+/*--------------- footer ---------------*/
+
+#pied {
+  background-color: var(--font3);
+}
+
+#pied #infos {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 24px;
+}
+
+#pied #infos #divers,
+#pied #infos #contact {
+  width: 46%;
+}
+
+#pied #infos #divers {
+  display: flex;
+  background-color: white;
+  padding: 40px;
+  box-sizing: border-box;
+  max-height: 370px;
+  margin-top: 110px;
+}
+
+#pied #infos #divers .colonne {
+  width: 48%;
+}
+
+#pied #infos #divers .colonne h4 {
+  margin-top: 16px;
+}
+
+#pied #infos #divers .colonne ul {
+  display: flex;
+}
+
+#pied #infos #divers .colonne ul li a {
+  margin: 0 10px;
+  color: var(--font4);
+}
+
+#pied #infos #contact h2 img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 60px;
+}
+
+#pied #infos #contact .titre {
+  flex-direction: row-reverse;
+}
+
+#pied #infos #contact .titre img {
+  margin-right: 16px;
+}
+
+#pied #infos #contact p label {
+  margin-left: 32px;
+}
+
+#pied #infos #contact p input[type="text"],
+#pied #infos #contact p input[type="email"],
+#pied #infos #contact p textarea {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  margin-top: 16px;
+}
+
+#pied #infos #contact p input[type="email"] {
+  margin-bottom: 16px;
+}
+
+#pied #infos #contact p input[type="submit"] {
+  background-color: var(--font2);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 15px;
+}
+
+#pied #copyright p {
+  text-align: center;
+  font-weight: bold;
 }
 
 body {
@@ -201,4 +386,47 @@ body {
   font-family: var(--fontprincipale);
   /* taille de font */
   font-size: 18px;
+}
+
+.bruh {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  #histoire .imghistoire,
+  #histoire #contenuehistoire {
+  width: 98%;
+  }
+#histoire .imghistoire{
+  margin-bottom: 15px;
+  }
+  #projets #listeprojets .projets{
+    width: 98%;
+    height: 350px;
+    margin-bottom: 16px;
+  }
+  #projets .titre{
+    width: 90%;
+    height: 90%;
+  }
+  #bandeau #menuprincipal #burger i{
+    display: block;
+  }
+  #bandeau #menuprincipal ul{
+    display: none;
+  }
+
+  #bandeau #telephone{
+    display: none;
+  }
+
+  #bienvenue .avatar{
+    display: none;
+  }
+  #bienvenue .bienvenuetext{
+    width: 100%;
+  }
+  #bienvenue .bienvenuetext .hello{
+    font-size: 2rem;
+  }
 }

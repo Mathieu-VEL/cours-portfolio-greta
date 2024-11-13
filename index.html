@@ -19,6 +19,9 @@
       <!-- titre de l'accueil -->
       <h1><a href="index.html">Mon Portfolio</a></h1>
       <nav id="menuprincipal">
+        <div id="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <!-- list de header -->
         <ul>
           <li><a href="index.html" class="choix">Accueil</a></li>
@@ -73,6 +76,78 @@
           </p>
         </div>
       </div>
+      <!------------ block projets ------------>
+
+      <section id="projets">
+        <h2 class="titre">
+          <span class="bruh">Mes&nbsp;Projets</span>
+          <img src="./imgportfolio/aerial-view.jpg" alt="projets" />
+        </h2>
+        <div id="listeprojets">
+          <article class="projets">
+            <h4>Site Web</h4>
+            <h3>Zoik Agency</h3>
+            <img src="./imgportfolio/nikhil.jpg" alt="nikhil" />
+          </article>
+          <article class="projets">
+            <h4>Photographie</h4>
+            <h3>The watch</h3>
+            <img src="./imgportfolio/the-5th.jpg" alt="the 5th" />
+          </article>
+        </div>
+      </section>
+                    <!-------------- FOOTER  --------------->
+      <footer id="pied" class="container">
+        <aside id="infos">
+          <div id="divers">
+            <div class="colonne">
+              <h4>Resont connectés</h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+              </ul>
+              <h4>Démarrons un projets</h4>
+              <p>Je suis disponible en freelance.</p>
+            </div>
+            <div class="colonne">
+              <h4>A propos</h4>
+              <p>
+                Je suis un futur professionnel du web. restez en contact avec
+                moi.
+              </p>
+              <h4>Email</h4>
+              <p>hello [@]moi.net</p>
+              <h4>Téléphone</h4>
+              <p>06 06 06 06 06</p>
+            </div>
+          </div>
+          <div id="contact">
+            <h2 class="titre">Contact
+              <img src="./imgportfolio/handshake-man.jpg" alt="contact">
+            </h2>
+            <form action="envoimail.php" method="post">
+              <p><input type="text" name="nom" placeholder="Nom"></p>
+              <p><input type="email" name="email" placeholder="Email"></p>
+              <P>Vos projets </P>
+              <p><input type="checkbox" id="sites" name="projets" value="site"><label for="sites">Sites web</label></p>
+              <p><input type="checkbox" id="ecommerce" name="projets" value="ecommerce"><label for="sites">Ecommerce</label></p>
+              <p><input type="checkbox" id="seo" name="projets" value="seo"><label for="sites">SEO</label></p>
+              <p><textarea name="message" placeholder="Racontez votre projet" rows="5" id=""></textarea></p>
+              <p><input type="submit" value="Envoyer"></p>
+            </form>
+          </div>
+        </aside>
+        <div id="copyright">
+          <p>bullshit &copy; bullshit</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
